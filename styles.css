@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 /* Remove default margin */
 body,
 h1,
@@ -62,19 +58,200 @@ select {
   font: inherit;
 }
 
-.main {
+body {
   display: grid;
-  grid-template-columns: 30em;
-  grid-template-rows: repeat(3, auto);
   justify-content: center;
+  align-items: center;
+  background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
 }
 
+.main {
+  display: grid;
+  grid-template-columns: 20.625rem;
+  grid-template-rows: repeat(3, auto);
+  justify-content: center;
+  margin: 1rem;
+}
+
+.section {
+  text-align: center;
+}
+.section__h1 {
+  margin: 0 1rem 0 1rem;
+  font-size: 2.5em;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  line-height: 2rem;
+  color: hsl(300deg, 43%, 22%);
+}
+.section__p {
+  font-family: "League Spartan", sans-serif;
+  font-size: 1em;
+  margin: 0.25rem 0.1rem 0 0.1rem;
+  color: hsl(303deg, 10%, 53%);
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .aside__div {
   display: flex;
   flex-direction: column;
+  width: 20.625rem;
+  height: 5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1em;
+  background-color: hsl(300deg, 24%, 96%);
+  line-height: 1.25rem;
+}
+.aside__div--span {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
+  color: hsl(300deg, 43%, 22%);
 }
 .aside__div--start {
+  width: 7.5rem;
+  height: 1rem;
   display: flex;
+  margin-bottom: 0.5rem;
+  justify-content: space-around;
+}
+
+.start {
+  width: 1em;
+}
+
+.section-card {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 1rem;
+  margin-top: 3rem;
+}
+
+.article {
+  width: 20.625rem;
+  height: 17.5rem;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: hsl(300deg, 43%, 22%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 0.5rem;
+}
+.article__div {
+  align-self: center;
+  margin-left: 1rem;
+}
+.article__h2 {
+  font-size: 1em;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
+}
+.article__image {
+  align-self: center;
+  width: 2.5rem;
+  border-radius: 50%;
+}
+.article__p {
+  grid-row: 2/3;
+  grid-column: 1/3;
+  font-family: "League Spartan", sans-serif;
+  line-height: 1.5rem;
+  font-size: 1.25em;
+}
+.article__span {
+  font-family: "League Spartan", sans-serif;
+  color: hsl(303deg, 10%, 53%);
+  color: hsl(333deg, 80%, 67%);
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+  }
+  .main {
+    grid-template-columns: 35.625rem 33.75rem;
+    grid-template-rows: 15.935rem 20.625rem;
+  }
+  .section {
+    grid-template-columns: repeat(3, 22.1875rem);
+    grid-template-rows: 14.6875rem;
+    height: 17.5rem;
+    width: 35.9375rem;
+    text-align: start;
+    padding-right: 12rem;
+    margin-bottom: 1rem;
+  }
+  .section__h1 {
+    font-size: 3em;
+    line-height: 3rem;
+    margin: 0 0 1rem 0;
+  }
+  .section-card {
+    display: flex;
+    width: 69.375rem;
+    height: 18.875rem;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    justify-content: space-between;
+    row-gap: 0;
+    margin-top: 5rem;
+  }
+  .colton {
+    align-self: flex-start;
+  }
+  .irene {
+    align-self: center;
+  }
+  .anne {
+    align-self: flex-end;
+  }
+  .aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aside__div {
+    display: flex;
+    flex-direction: row;
+    width: 27.8125rem;
+    height: 3.125rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+  }
+  .aside__div--span {
+    align-self: center;
+    justify-self: cen;
+  }
+  .aside__div--start {
+    width: 7.8125rem;
+    height: 1.25rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+  }
+  .aside .reviews {
+    align-self: flex-start;
+  }
+  .aside .guru {
+    align-self: center;
+  }
+  .aside .best-tech {
+    align-self: flex-end;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

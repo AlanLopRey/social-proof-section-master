@@ -35,8 +35,8 @@ mobile
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/AlanLopRey/3-column-preview-card-component-main)
-- Live Site URL: [Live site URL here](https://alanloprey.github.io/3-column-preview-card-component-main/)
+- Solution URL: [Solution URL here](https://github.com/AlanLopRey/social-proof-section-master)
+- Live Site URL: [Live site URL here](https://alanloprey.github.io/social-proof-section-master/)
 
 ## My process
 
@@ -72,8 +72,7 @@ I thing i made a mess in my SASS file so i think i need to practice more with mo
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@AlanLopRey](https://www.frontendmentor.io/profile/AlanLopRey)
 
 ## Acknowledgments
 
